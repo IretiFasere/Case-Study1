@@ -3,7 +3,7 @@ Ireti Fasere
 March 6, 2017
 
 Introduction
-This repository is for Case Study1 for SMU Class MSDS 6306-402, Doing Data Science. In this repository, we analyze the data set Country and GDPcleaned.csv.
+This repository is for Case Study1 for SMU Class MSDS 6306-402, Doing Data Science. In this repository, we analyze the data set Countrycleaned.csv and GDPcleaned.csv.
 
 
 1. Created a ReadMe file for this repository. The ReadMe file explains the purpose of the project.
