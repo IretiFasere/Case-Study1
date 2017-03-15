@@ -1,4 +1,4 @@
-# Setting my working directory to where my data files are located.
+# Setting my working directory to my data files location.
 setwd("D:/DODATAHW/")
 getwd()
 
