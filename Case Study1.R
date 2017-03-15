@@ -13,13 +13,13 @@ Country=df<-read.csv("getdata_data_Country.csv", header = TRUE, sep=",",na.strin
 head(Country) #Checking the data.
 
 
-#Set column names, for cleaner import
+#Set column names, for a clean import
 names<- c("CountryCode","Ranking", "Delete", "Economy", "GDP","Delete","Delete","Delete","Delete","Delete")
 #Importing the GDP data file with the column names.
 GDP<-read.csv("getdata_data_GDP.csv", header = FALSE, sep=",", skip=5, col.names = names,na.strings=c("", "NA"))
 head(GDP)#Checking the data.
 
-#Cleaning GDP data.
+#Clean GDP data.
 #Deleting columns with NAs or blank.
 GDP$Delete<-NULL
 GDP$Delete.1<-NULL
@@ -56,7 +56,7 @@ Sorteddata[13,1:2]
 
 
 #Question 3
-#Subset the data where Income group equal High income: OECD and taking the mean.
+#Subset the data where Income group equal High income: OECD and get the mean.
 mean(as.numeric(as.character(Mergeddata[Mergeddata$Income.Group =="High income: OECD",]$Ranking)))
 #Subset the data where Income group equal High income: nonOECD and taking the mean.
 mean(as.numeric(as.character(Mergeddata[Mergeddata$Income.Group =="High income: nonOECD",]$Ranking)))
@@ -72,6 +72,7 @@ ggplot(Mergeddata, aes(Income.Group, GDP),labels)+geom_point(aes(colour= factor(
   theme(legend.position="bottom")
 
 #Question 5
+# Summary of Income group
 summary(Mergeddata$Income.Group)
 
 #Question 6
